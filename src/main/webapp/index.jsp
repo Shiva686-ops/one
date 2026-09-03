@@ -180,7 +180,7 @@ footer{
 <body>
 
 <header>
-    <div class="logo">Nexus<span>Shop</span></div>
+    <div class="logo">Narsimha<span>Nagisetti</span></div>
 
     <nav>
         <a href="#">Home</a>
@@ -289,10 +289,10 @@ footer{
 </div>
 
 <footer>
-    <h3>NexusShop</h3>
+    <h3>NarsimhaNagisetti</h3>
     <p>Simple shopping. Better experience.</p>
     <br>
-    © 2026 NexusShop
+    © 2026 NarsimhaNagisetti
 </footer>
 
 <script>
