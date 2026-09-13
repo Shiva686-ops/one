@@ -167,7 +167,7 @@
         <a href="#about">About</a>
       </nav>
       <div class="cart-info">
-        <i class="fas fa-shopping-bag"></i>
+        <em class="fas fa-shopping-bag"></em>
         Cart: <span id="cartCount">0</span>
       </div>
     </div>
