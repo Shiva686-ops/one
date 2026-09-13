@@ -1,321 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chichaa Liquor Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chichaa Store</title>
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-    font-family:Arial,sans-serif;
-    background:#f7f8fa;
-    color:#222
-}
-header{
-    background:#fff;
-    padding:18px 7%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    box-shadow:0 2px 10px #ddd;
-    position:sticky;
-    top:0;
-    z-index:10
-}
-.logo{font-size:24px;font-weight:bold;color:#111}
-.logo span{color:#ff4d4d}
-nav a{
-    text-decoration:none;
-    color:#444;
-    margin:0 12px;
-    font-size:14px
-}
-nav a:hover{color:#ff4d4d}
-.search{
-    padding:10px 15px;
-    border:1px solid #ddd;
-    border-radius:25px;
-    width:220px
-}
-.cart{
-    background:#111;
-    color:white;
-    padding:10px 16px;
-    border-radius:22px;
-    border:0;
-    cursor:pointer
-}
-.hero{
-    margin:30px 7%;
-    min-height:380px;
-    border-radius:25px;
-    background:linear-gradient(90deg,#111c,#1112),
-    url("https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=80")
-    center/cover;
-    display:flex;
-    align-items:center;
-    padding:50px;
-    color:white
-}
-.hero h1{font-size:48px;max-width:600px;margin-bottom:15px}
-.hero p{max-width:500px;color:#eee;margin-bottom:25px}
-.btn{
-    padding:13px 24px;
-    border:0;
-    border-radius:25px;
-    cursor:pointer;
-    font-weight:bold
-}
-.primary{background:#ff4d4d;color:white}
-section{padding:35px 7%}
-.title{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px
-}
-.categories{
-    display:grid;
-    grid-template-columns:repeat(6,1fr);
-    gap:15px
-}
-.category{
-    background:white;
-    padding:25px 10px;
-    text-align:center;
-    border-radius:15px;
-    cursor:pointer;
-    transition:.2s
-}
-.category:hover{
-    background:#ff4d4d;
-    color:white;
-    transform:translateY(-4px)
-}
-.products{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px
-}
-.card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 3px 15px #ddd;
-    transition:.2s
-}
-.card:hover{transform:translateY(-5px)}
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover
-}
-.info{padding:18px}
-.info h3{margin-bottom:8px}
-.price{
-    font-size:20px;
-    font-weight:bold;
-    margin:12px 0
-}
-.old{
-    text-decoration:line-through;
-    color:#999;
-    font-size:13px;
-    margin-left:5px
-}
-.add{
-    width:100%;
-    padding:11px;
-    border:0;
-    background:#111;
-    color:white;
-    border-radius:10px;
-    cursor:pointer
-}
-.sale{
-    margin:30px 7%;
-    padding:40px;
-    border-radius:20px;
-    background:#111;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center
-}
-.sale h2{font-size:30px}
-footer{
-    background:#111;
-    color:#aaa;
-    text-align:center;
-    padding:30px
-}
-@media(max-width:900px){
-    nav{display:none}
-    .categories{grid-template-columns:repeat(3,1fr)}
-    .products{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:600px){
-    header{padding:15px}
-    .search{display:none}
-    .hero{
-        margin:15px;
-        padding:30px;
-        min-height:400px
-    }
-    .hero h1{font-size:34px}
-    section{padding:25px 15px}
-    .categories{grid-template-columns:repeat(2,1fr)}
-    .products{grid-template-columns:1fr}
-    .sale{
-        margin:15px;
-        flex-direction:column;
-        gap:20px;
-        text-align:center
-    }
-}
-</style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f1eb;
+            color: #252525;
+        }
+
+        header {
+            background: #24170f;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            margin: 0;
+            color: #e5b567;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            background: #d9c2a0;
+            padding: 70px 8%;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            max-width: 600px;
+            margin: 0 0 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 500px;
+        }
+
+        .button {
+            background: #24170f;
+            color: white;
+            border: 0;
+            padding: 12px 22px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 40px 8%;
+        }
+
+        .categories {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            background: white;
+            padding: 18px 25px;
+            border-radius: 8px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .product h3 {
+            margin-top: 0;
+        }
+
+        .price {
+            color: #9b651d;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 12px 0;
+        }
+
+        .add {
+            width: 100%;
+        }
+
+        footer {
+            background: #24170f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                display: none;
+            }
+
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">Chichaa<span>Liquor</span></div>
+    <h2>Chichaa Store</h2>
 
     <nav>
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
         <a href="#categories">Categories</a>
         <a href="#products">Products</a>
-        <a href="#deals">Deals</a>
     </nav>
-
-    <input class="search" id="search" placeholder="Search drinks...">
-
-    <button class="cart">
-        🛒 Cart <span id="count">0</span>
-    </button>
 </header>
 
-<div class="hero">
-    <div>
-        <h1>Your favorite drinks. One simple shop.</h1>
+<main>
+    <section class="hero" id="home">
+        <h1>Quality Drinks for Every Occasion</h1>
         <p>
-            Explore premium spirits, wines and beverages
-            from your favorite brands.
+            Discover our collection of whisky, wine, vodka and other
+            beverages at Chichaa Store.
         </p>
-        <button class="btn primary" onclick="location.href='#products'">
-            Explore Now →
-        </button>
-    </div>
-</div>
+        <button class="button" id="shopButton">Shop Now</button>
+    </section>
 
-<section id="categories">
+    <section id="categories">
+        <h2>Categories</h2>
 
-    <div class="title">
-        <h2>Shop by Category</h2>
-    </div>
-
-    <div class="categories">
-        <div class="category">🥃<br><strong>Whisky</strong></div>
-        <div class="category">🍷<br><b>Wine</b></div>
-        <div class="category">🍺<br><b>Beer</b></div>
-        <div class="category">🍸<br><b>Vodka</b></div>
-        <div class="category">🍹<br><b>Rum</b></div>
-        <div class="category">🥂<br><b>Champagne</b></div>
-    </div>
-
-</section>
-
-<section id="products">
-
-    <div class="title">
-        <div>
-            <h2>Popular Drinks</h2>
-            <small>Popular selections picked for you</small>
+        <div class="categories">
+            <div class="category">Whisky</div>
+            <div class="category">Wine</div>
+            <div class="category">Beer</div>
+            <div class="category">Vodka</div>
+            <div class="category">Rum</div>
+            <div class="category">Champagne</div>
         </div>
-    </div>
+    </section>
 
-    <div class="products" id="productList">
+    <section id="products">
+        <h2>Featured Products</h2>
 
-        <div class="card" data-name="premium whisky">
-            <img src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=600&q=80">
-            <div class="info">
+        <div class="products">
+            <article class="product">
                 <h3>Premium Whisky</h3>
-                <p>⭐⭐⭐⭐⭐</p>
+                <p>Rich and smooth flavour.</p>
                 <div class="price">$59</div>
-                <button class="add" onclick="addCart()">Add to Cart</button>
-            </div>
-        </div>
+                <button class="button add">Add to Cart</button>
+            </article>
 
-        <div class="card" data-name="red wine">
-            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80">
-            <div class="info">
+            <article class="product">
                 <h3>Red Wine</h3>
-                <p>⭐⭐⭐⭐⭐</p>
+                <p>Classic full-bodied red wine.</p>
                 <div class="price">$39</div>
-                <button class="add" onclick="addCart()">Add to Cart</button>
-            </div>
-        </div>
+                <button class="button add">Add to Cart</button>
+            </article>
 
-        <div class="card" data-name="premium vodka">
-            <img src="https://images.unsplash.com/photo-1582106245687-cbb466a9f07f?auto=format&fit=crop&w=600&q=80">
-            <div class="info">
+            <article class="product">
                 <h3>Premium Vodka</h3>
-                <p>⭐⭐⭐⭐</p>
-                <div class="price">$49 <span class="old">$69</span></div>
-                <button class="add" onclick="addCart()">Add to Cart</button>
-            </div>
-        </div>
+                <p>Clean and refreshing taste.</p>
+                <div class="price">$49</div>
+                <button class="button add">Add to Cart</button>
+            </article>
 
-        <div class="card" data-name="craft beer">
-            <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=600&q=80">
-            <div class="info">
+            <article class="product">
                 <h3>Craft Beer</h3>
-                <p>⭐⭐⭐⭐⭐</p>
+                <p>Fresh and balanced craft beer.</p>
                 <div class="price">$19</div>
-                <button class="add" onclick="addCart()">Add to Cart</button>
-            </div>
+                <button class="button add">Add to Cart</button>
+            </article>
         </div>
-
-    </div>
-</section>
-
-<div class="sale" id="deals">
-    <div>
-        <h2>🔥 Special Deals</h2>
-        <p>Great prices on selected beverages</p>
-    </div>
-
-    <button class="btn primary" onclick="location.href='#products'">
-        View Deals
-    </button>
-</div>
+    </section>
+</main>
 
 <footer>
-    <h3>Chichaa Liquor</h3>
-    <p>Good drinks. Better experience.</p>
-    <br>
-    © 2026 Chichaa Liquor
+    <p>Chichaa Store © 2026</p>
 </footer>
 
 <script>
-let count=0;
+    const shopButton = document.getElementById("shopButton");
+    const addButtons = document.querySelectorAll(".add");
 
-function addCart(){
-    count++;
-    document.getElementById("count").innerText=count;
-}
-
-document.getElementById("search").addEventListener("input",function(){
-    let value=this.value.toLowerCase();
-
-    document.querySelectorAll(".card").forEach(card=>{
-        card.style.display=
-            card.dataset.name.includes(value)
-            ? "block"
-            : "none";
+    shopButton.addEventListener("click", () => {
+        document.getElementById("products").scrollIntoView();
     });
-});
+
+    addButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            button.textContent = "Added";
+        });
+    });
 </script>
 
 </body>
