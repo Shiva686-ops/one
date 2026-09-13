@@ -215,7 +215,7 @@ footer{
     </div>
 
     <div class="categories">
-        <div class="category">📱<br><b>Phones</b></div>
+        <div class="category">📱<br><strong>Phones</strong></div>
         <div class="category">💻<br><b>Laptops</b></div>
         <div class="category">👕<br><b>Fashion</b></div>
         <div class="category">🎧<br><b>Audio</b></div>
