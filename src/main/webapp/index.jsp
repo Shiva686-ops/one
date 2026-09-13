@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NarsimhaNagisetti</title>
+<title>Chichaa Liquor Store</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -51,7 +51,7 @@ nav a:hover{color:#ff4d4d}
     min-height:380px;
     border-radius:25px;
     background:linear-gradient(90deg,#111c,#1112),
-    url("https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&q=80")
+    url("https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=80")
     center/cover;
     display:flex;
     align-items:center;
@@ -180,7 +180,7 @@ footer{
 <body>
 
 <header>
-    <div class="logo">Narsimha<span>Nagisetti</span></div>
+    <div class="logo">Chichaa<span>Liquor</span></div>
 
     <nav>
         <a href="#">Home</a>
@@ -189,7 +189,7 @@ footer{
         <a href="#deals">Deals</a>
     </nav>
 
-    <input class="search" id="search" placeholder="Search products...">
+    <input class="search" id="search" placeholder="Search drinks...">
 
     <button class="cart">
         🛒 Cart <span id="count">0</span>
@@ -198,79 +198,81 @@ footer{
 
 <div class="hero">
     <div>
-        <h1>Everything you need. One simple shop.</h1>
+        <h1>Your favorite drinks. One simple shop.</h1>
         <p>
-            Discover trending electronics, fashion and accessories
-            at prices you'll love.
+            Explore premium spirits, wines and beverages
+            from your favorite brands.
         </p>
         <button class="btn primary" onclick="location.href='#products'">
-            Shop Now →
+            Explore Now →
         </button>
     </div>
 </div>
 
 <section id="categories">
+
     <div class="title">
         <h2>Shop by Category</h2>
     </div>
 
     <div class="categories">
-        <div class="category">📱<br><strong>Phones</strong></div>
-        <div class="category">💻<br><b>Laptops</b></div>
-        <div class="category">👕<br><b>Fashion</b></div>
-        <div class="category">🎧<br><b>Audio</b></div>
-        <div class="category">👟<br><b>Footwear</b></div>
-        <div class="category">⌚<br><b>Accessories</b></div>
+        <div class="category">🥃<br><strong>Whisky</strong></div>
+        <div class="category">🍷<br><b>Wine</b></div>
+        <div class="category">🍺<br><b>Beer</b></div>
+        <div class="category">🍸<br><b>Vodka</b></div>
+        <div class="category">🍹<br><b>Rum</b></div>
+        <div class="category">🥂<br><b>Champagne</b></div>
     </div>
+
 </section>
 
 <section id="products">
 
     <div class="title">
         <div>
-            <h2>Trending Products</h2>
-            <small>Popular products picked for you</small>
+            <h2>Popular Drinks</h2>
+            <small>Popular selections picked for you</small>
         </div>
     </div>
 
     <div class="products" id="productList">
 
-        <div class="card" data-name="iphone 14 pro">
-            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=600&q=80">
+        <div class="card" data-name="premium whisky">
+            <img src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=600&q=80">
             <div class="info">
-                <h3>iPhone 14 Pro</h3>
+                <h3>Premium Whisky</h3>
                 <p>⭐⭐⭐⭐⭐</p>
-                <div class="price">$999</div>
+                <div class="price">$59</div>
                 <button class="add" onclick="addCart()">Add to Cart</button>
             </div>
         </div>
 
-        <div class="card" data-name="macbook pro">
-            <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80">
+        <div class="card" data-name="red wine">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80">
             <div class="info">
-                <h3>MacBook Pro</h3>
+                <h3>Red Wine</h3>
                 <p>⭐⭐⭐⭐⭐</p>
-                <div class="price">$1,899</div>
+                <div class="price">$39</div>
                 <button class="add" onclick="addCart()">Add to Cart</button>
             </div>
         </div>
 
-        <div class="card" data-name="apple watch">
-            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80">
+        <div class="card" data-name="premium vodka">
+            <img src="https://images.unsplash.com/photo-1582106245687-cbb466a9f07f?auto=format&fit=crop&w=600&q=80">
             <div class="info">
-                <h3>Apple Watch</h3>
+                <h3>Premium Vodka</h3>
                 <p>⭐⭐⭐⭐</p>
-                <div class="price">$299 <span class="old">$399</span></div>
+                <div class="price">$49 <span class="old">$69</span></div>
                 <button class="add" onclick="addCart()">Add to Cart</button>
             </div>
         </div>
 
-        <div class="card" data-name="sony headphones">
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80">
+        <div class="card" data-name="craft beer">
+            <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=600&q=80">
             <div class="info">
-                <h3>Sony Headphones</h3>
+                <h3>Craft Beer</h3>
                 <p>⭐⭐⭐⭐⭐</p>
-                <div class="price">$249</div>
+                <div class="price">$19</div>
                 <button class="add" onclick="addCart()">Add to Cart</button>
             </div>
         </div>
@@ -280,19 +282,20 @@ footer{
 
 <div class="sale" id="deals">
     <div>
-        <h2>🔥 Flash Sale</h2>
-        <p>Up to 40% off selected products</p>
+        <h2>🔥 Special Deals</h2>
+        <p>Great prices on selected beverages</p>
     </div>
+
     <button class="btn primary" onclick="location.href='#products'">
         View Deals
     </button>
 </div>
 
 <footer>
-    <h3>NarsimhaNagisetti</h3>
-    <p>Simple shopping. Better experience.</p>
+    <h3>Chichaa Liquor</h3>
+    <p>Good drinks. Better experience.</p>
     <br>
-    © 2026 NarsimhaNagisetti
+    © 2026 Chichaa Liquor
 </footer>
 
 <script>
